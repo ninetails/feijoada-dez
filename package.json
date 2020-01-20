@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -30,7 +27,15 @@
     "@types/testing-library__dom": "^6.11.1",
     "@types/testing-library__jest-dom": "git://github.com/vagonpidarasov/jest-dom.git",
     "@types/testing-library__react": "^9.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
     "@yarnpkg/pnpify": "^2.0.0-rc.15",
+    "eslint": "^6.8.0",
+    "eslint-config-standard-with-typescript": "^11.0.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "react-scripts": "3.3.0",
     "rimraf": "^3.0.0",
     "typescript": "~3.7.5"
@@ -43,9 +48,10 @@
     "build": "react-scripts build",
     "clean": "rimraf build coverage || :",
     "eject": "react-scripts eject",
+    "lint": "pnpify eslint --ext .ts,.tsx src",
     "reset": "yarn clean && yarn",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc"
   }
 }
