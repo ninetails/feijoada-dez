@@ -48,8 +48,9 @@
     "build": "react-scripts build",
     "clean": "rimraf build coverage || :",
     "eject": "react-scripts eject",
+    "fix": "pnpify eslint --ext .ts,.tsx --fix src",
     "lint": "pnpify eslint --ext .ts,.tsx src",
-    "reset": "yarn clean && yarn",
+    "reset": "$npm_execpath run clean && $npm_execpath install",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "type-check": "tsc"
