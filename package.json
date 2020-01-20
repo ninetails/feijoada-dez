@@ -35,8 +35,9 @@
     "react-dom": "^16.12.0"
   },
   "scripts": {
+    "berry": "yarn policies set-version berry",
     "build": "react-scripts build",
-    "clean": "rimraf build coverage node_modules || :",
+    "clean": "rimraf build coverage || :",
     "eject": "react-scripts eject",
     "reset": "$npm_execpath run clean && $npm_execpath install",
     "start": "react-scripts start",
