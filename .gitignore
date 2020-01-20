@@ -23,5 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Yarn
-.yarn
-.yarnrc
+# See https://github.com/yarnpkg/berry/issues/454
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.

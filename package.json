@@ -19,30 +19,33 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
+    "@testing-library/dom": "^6.11.0",
+    "@testing-library/jest-dom": "^5.0.0",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.0.3",
+    "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/testing-library__dom": "^6.11.1",
+    "@types/testing-library__jest-dom": "git://github.com/vagonpidarasov/jest-dom.git",
+    "@types/testing-library__react": "^9.1.2",
     "@yarnpkg/pnpify": "^2.0.0-rc.15",
     "react-scripts": "3.3.0",
     "rimraf": "^3.0.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.5"
   },
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "scripts": {
-    "berry": "yarn policies set-version berry",
     "build": "react-scripts build",
     "clean": "rimraf build coverage || :",
     "eject": "react-scripts eject",
-    "reset": "$npm_execpath run clean && $npm_execpath install",
+    "reset": "yarn clean && yarn",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "upd": "pnpify upd"
+    "type-check": "tsc --noEmit"
   }
 }

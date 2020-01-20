@@ -1800,9 +1800,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^4.2.4":
-  version: 4.2.4
-  resolution: "@testing-library/jest-dom@npm:4.2.4"
+"@testing-library/jest-dom@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@testing-library/jest-dom@npm:5.0.0"
   dependencies:
     "@babel/runtime": ^7.5.1
     chalk: ^2.4.1
@@ -1813,11 +1813,11 @@ __metadata:
     lodash: ^4.17.11
     pretty-format: ^24.0.0
     redent: ^3.0.0
-  checksum: 4f404f87353fd153c511f93505ff246f551a5378798c411de18af138c53b904e431cc59516b16b728e00cf6ccfcedfbdec4ff1fb8429e0da7f4d09d1f145e998
+  checksum: d8f3c5d321798d7f60181aa2d790d7aa156e44277cd51206b7dd35f749b7c0f29cf371679252247050c7e26816e684084917a8b66045a60df60f467f86cd51ad
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^9.3.2":
+"@testing-library/react@npm:^9.4.0":
   version: 9.4.0
   resolution: "@testing-library/react@npm:9.4.0"
   dependencies:
@@ -1831,12 +1831,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^7.1.2":
-  version: 7.2.1
-  resolution: "@testing-library/user-event@npm:7.2.1"
+"@testing-library/user-event@npm:^8.0.3":
+  version: 8.0.3
+  resolution: "@testing-library/user-event@npm:8.0.3"
   peerDependencies:
     "@testing-library/dom": ">=5"
-  checksum: a34e842dca3124efc43271757df2cae1fd22919f86c35e68062f92dc219f05ba9399a7a38fc3904a6de4c62451b1cdc22158be2c90e1ee1e8d25ec37f5d6c791
+  checksum: b6165b589499ea13008c42291cbec5174034c6e9e2e4624774269f49a94eea65fb1b0eb550ed1dc35025a6665144067aef67bb181df7f35941b68cf8c8a55c69
   languageName: node
   linkType: hard
 
@@ -1932,7 +1932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^24.0.0":
+"@types/jest@npm:^24.9.0":
   version: 24.9.0
   resolution: "@types/jest@npm:24.9.0"
   dependencies:
@@ -1955,10 +1955,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^12.0.0":
+"@types/node@npm:*":
   version: 12.12.25
   resolution: "@types/node@npm:12.12.25"
   checksum: 2bc6bd1139551e403c9c00e002bbe66a7771084b68eb1c38ee9077aa13689e20c097a7c7fdb08adf6a1245863cd363d8d66d2b3fe6f00ae1ae3b3cf539827f73
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^13.1.8":
+  version: 13.1.8
+  resolution: "@types/node@npm:13.1.8"
+  checksum: 0dbe0a416ce3812115c169a0efd67558a373541e61d1cdb627b3d0a180c8fe892a0480c9fff338ffe0dc915958b3664385f14babea3346624557da5bbd8439f9
   languageName: node
   linkType: hard
 
@@ -1983,7 +1990,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:*, @types/react-dom@npm:^16.9.0":
+"@types/react-dom@npm:*, @types/react-dom@npm:^16.9.4":
   version: 16.9.4
   resolution: "@types/react-dom@npm:16.9.4"
   dependencies:
@@ -1992,7 +1999,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^16.9.0":
+"@types/react@npm:*, @types/react@npm:^16.9.17":
   version: 16.9.17
   resolution: "@types/react@npm:16.9.17"
   dependencies:
@@ -2009,12 +2016,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/testing-library__dom@npm:*, @types/testing-library__dom@npm:^6.0.0":
+"@types/testing-library__dom@npm:*, @types/testing-library__dom@npm:^6.0.0, @types/testing-library__dom@npm:^6.11.1":
   version: 6.11.1
   resolution: "@types/testing-library__dom@npm:6.11.1"
   dependencies:
     pretty-format: ^24.3.0
   checksum: ff4bd53d4ce7cf201108a84185b8d1dedb5f91eb5b6c6c46df608a9d4dd8f71c8f346dea7d21b9a165624be49cb1ee209c626ba59daf4e03bf1514215ac4aa62
+  languageName: node
+  linkType: hard
+
+"@types/testing-library__jest-dom@git://github.com/vagonpidarasov/jest-dom.git":
+  version: 1.0.0
+  resolution: "@types/testing-library__jest-dom@git://github.com/vagonpidarasov/jest-dom.git#commit:7550ebf14ba896252779e72cedd6f8b34b3572c1"
+  checksum: 300791183382c7063f24518ed1ea6555000af9fe92c2e6983047558f6c196fe8d00be89719a80ede1eb5da77bc469688209c94e3d7f235b0c4ca29d20080db67
   languageName: node
   linkType: hard
 
@@ -5683,19 +5697,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "feijoada-dez@workspace:."
   dependencies:
-    "@testing-library/jest-dom": ^4.2.4
-    "@testing-library/react": ^9.3.2
-    "@testing-library/user-event": ^7.1.2
-    "@types/jest": ^24.0.0
-    "@types/node": ^12.0.0
-    "@types/react": ^16.9.0
-    "@types/react-dom": ^16.9.0
+    "@testing-library/dom": ^6.11.0
+    "@testing-library/jest-dom": ^5.0.0
+    "@testing-library/react": ^9.4.0
+    "@testing-library/user-event": ^8.0.3
+    "@types/jest": ^24.9.0
+    "@types/node": ^13.1.8
+    "@types/react": ^16.9.17
+    "@types/react-dom": ^16.9.4
+    "@types/testing-library__dom": ^6.11.1
+    "@types/testing-library__jest-dom": "git://github.com/vagonpidarasov/jest-dom.git"
+    "@types/testing-library__react": ^9.1.2
     "@yarnpkg/pnpify": ^2.0.0-rc.15
     react: ^16.12.0
     react-dom: ^16.12.0
     react-scripts: 3.3.0
     rimraf: ^3.0.0
-    typescript: ~3.7.2
+    typescript: ~3.7.5
   languageName: unknown
   linkType: soft
 
@@ -13186,7 +13204,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@~3.7.2#builtin<compat/typescript>":
+"typescript@patch:typescript@~3.7.5#builtin<compat/typescript>":
   version: 3.7.5
   resolution: "typescript@patch:typescript@npm%3A3.7.5#builtin<compat/typescript>::version=3.7.5&hash=226bd1"
   bin:
@@ -13196,7 +13214,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-typescript@~3.7.2:
+typescript@~3.7.5:
   version: 3.7.5
   resolution: "typescript@npm:3.7.5"
   bin:
