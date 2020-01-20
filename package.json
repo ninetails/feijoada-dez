@@ -28,7 +28,8 @@
     "@types/react-dom": "^16.9.0",
     "react-scripts": "3.3.0",
     "rimraf": "^3.0.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "update-versions": "^2.3.5"
   },
   "dependencies": {
     "react": "^16.12.0",
@@ -41,6 +42,7 @@
     "eject": "react-scripts eject",
     "reset": "$npm_execpath run clean && $npm_execpath install",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "upd": "upd"
   }
 }
