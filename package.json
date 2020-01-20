@@ -29,8 +29,7 @@
     "@yarnpkg/pnpify": "^2.0.0-rc.15",
     "react-scripts": "3.3.0",
     "rimraf": "^3.0.0",
-    "typescript": "~3.7.2",
-    "update-versions": "^2.3.5"
+    "typescript": "~3.7.2"
   },
   "dependencies": {
     "react": "^16.12.0",
@@ -44,6 +43,6 @@
     "reset": "$npm_execpath run clean && $npm_execpath install",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "upd": "upd"
+    "upd": "pnpify upd"
   }
 }
